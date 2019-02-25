@@ -1315,6 +1315,7 @@ class Visitor_Of_FunCodeGen(ast.NodeVisitor):
 
                 syscall_name = sys_name.replace(ONTOLOGY_SC_FRAMEWORK, '')
                 syscall_name = syscall_name.replace(ONTOLOGY_SC_FRAMEWORK_boa, '').encode('utf-8')
+                syscall_name = syscall_name.replace('Ontology', 'OnyxChain').encode('utf-8')
 
             length = len(syscall_name)
             systemcall_name_array = bytearray([length]) + bytearray(syscall_name)
