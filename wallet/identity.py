@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-did_ont = "did:ont:"
+did_ont = "did:onx:"
 
 
 class Identity(object):
